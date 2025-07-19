@@ -8,7 +8,16 @@ import { defineConfig } from 'vite'
 export default defineConfig({
   plugins: [
     react(),
-    legacy()
+    legacy(),
+    {
+      name: 'html-transform',
+      transformIndexHtml(html) {
+        return html.replace(
+          /<base href=".\/" \/>/,
+          '<base href="/revendedor/" />'
+        )
+      }
+    }
   ],
   base: '/revendedor/',
   build: {
@@ -21,6 +30,11 @@ export default defineConfig({
         manualChunks: undefined
       }
     }
+  },
+  // Configuración para desarrollo
+  server: {
+    port: 3000,
+    open: true
   },
   test: {
     globals: true,
