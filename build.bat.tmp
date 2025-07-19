@@ -1,0 +1,3 @@
+@echo off
+cd /d "D:\Claude projects\revendedor\vendemax"
+npm run build

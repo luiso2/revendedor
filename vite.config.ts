@@ -13,7 +13,14 @@ export default defineConfig({
   base: '/revendedor/',
   build: {
     outDir: 'dist',
-    sourcemap: true
+    sourcemap: false,
+    // Asegura que los assets se copien correctamente
+    assetsDir: 'assets',
+    rollupOptions: {
+      output: {
+        manualChunks: undefined
+      }
+    }
   },
   test: {
     globals: true,
