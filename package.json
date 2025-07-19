@@ -6,7 +6,7 @@
   "homepage": "https://luiso2.github.io/revendedor",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "tsc && vite build && node scripts/post-build.js",
     "preview": "vite preview",
     "deploy": "npm run build && gh-pages -d dist",
     "test.e2e": "cypress run",
