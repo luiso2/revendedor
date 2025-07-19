@@ -1,0 +1,293 @@
+/* Estilos para la página de Cuentas */
+
+.summary-card {
+  margin: 16px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.summary-card ion-grid {
+  padding: 0;
+}
+
+.summary-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 12px;
+}
+
+.summary-item ion-icon {
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.summary-item ion-text p {
+  margin: 0;
+  font-size: 0.875rem;
+  color: var(--ion-color-medium);
+}
+
+.summary-item ion-text h3 {
+  margin: 4px 0 0 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+/* Cards de cuentas */
+.cuenta-card {
+  margin: 16px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cuenta-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.gestor-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+}
+
+.gestor-info ion-avatar {
+  width: 48px;
+  height: 48px;
+}
+
+.gestor-info h2 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.gestor-info p {
+  margin: 2px 0 0 0;
+  font-size: 0.875rem;
+  color: var(--ion-color-medium);
+}
+
+.cuenta-total {
+  text-align: right;
+}
+
+.cuenta-total h3 {
+  margin: 0 0 4px 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.cuenta-total ion-chip {
+  font-size: 0.75rem;
+}
+
+/* Estadísticas de cuenta */
+.cuenta-stats {
+  display: flex;
+  gap: 24px;
+  margin: 16px 0;
+  padding: 12px;
+  background: var(--ion-color-light);
+  border-radius: 8px;
+}
+
+.stat {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.stat ion-icon {
+  font-size: 20px;
+}
+
+.stat ion-text p {
+  margin: 0;
+  font-size: 0.875rem;
+}
+
+/* Botones de acción */
+.action-buttons {
+  display: flex;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.action-buttons ion-button:last-child {
+  flex: 1;
+}
+
+/* Mensaje de cuenta saldada */
+.saldado-message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 24px;
+}
+
+.saldado-message ion-icon {
+  font-size: 32px;
+}
+
+.saldado-message ion-text p {
+  margin: 0;
+  font-weight: 600;
+}
+
+/* Modal de pago */
+.payment-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.payment-header ion-avatar {
+  width: 48px;
+  height: 48px;
+}
+
+.payment-header ion-text h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.payment-header ion-text p {
+  margin: 4px 0 0 0;
+  color: var(--ion-color-medium);
+}
+
+/* Resumen de pago */
+.payment-summary {
+  padding: 16px;
+  background: var(--ion-color-light);
+  border-radius: 8px;
+}
+
+.payment-summary h3 {
+  margin: 0 0 12px 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+}
+
+.summary-row.total {
+  border-top: 2px solid var(--ion-color-medium-tint);
+  margin-top: 8px;
+  padding-top: 12px;
+}
+
+.summary-row.total h3 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+/* Lista de pedidos en modal */
+ion-modal ion-list ion-item {
+  --padding-start: 0;
+}
+
+ion-modal ion-checkbox {
+  margin-right: 16px;
+}
+
+ion-modal ion-item ion-label h3 {
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+ion-modal ion-item ion-label p {
+  font-size: 0.875rem;
+  color: var(--ion-color-medium);
+  margin: 2px 0;
+}
+
+ion-modal ion-note h4 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* Acordeón */
+ion-accordion {
+  margin-top: 12px;
+}
+
+ion-accordion ion-item[slot="header"] {
+  --background: var(--ion-color-light);
+  --color: var(--ion-color-primary);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+ion-accordion ion-list {
+  padding: 0;
+}
+
+/* Empty state */
+.empty-state {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.empty-state ion-icon {
+  font-size: 64px;
+  margin-bottom: 16px;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .cuenta-card {
+    max-width: 800px;
+    margin: 16px auto;
+  }
+  
+  .action-buttons {
+    justify-content: flex-end;
+  }
+  
+  .action-buttons ion-button {
+    flex: 0 0 auto;
+    min-width: 100px;
+  }
+  
+  .action-buttons ion-button:last-child {
+    flex: 0 0 auto;
+    min-width: 150px;
+  }
+}
+
+/* Búsqueda */
+ion-searchbar {
+  --background: var(--ion-color-light);
+  --border-radius: 8px;
+  --box-shadow: none;
+  --placeholder-opacity: 0.7;
+}
+
+/* Segmentos */
+ion-segment {
+  margin: 8px 16px;
+}
+
+ion-segment-button {
+  font-size: 0.875rem;
+}
+
+/* Badge en header */
+ion-toolbar ion-badge {
+  margin-right: 16px;
+}

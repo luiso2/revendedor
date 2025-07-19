@@ -1,0 +1,312 @@
+/* Estilos para la página de Gestores */
+
+.summary-card {
+  margin: 16px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.summary-card ion-card-header {
+  padding-bottom: 0;
+}
+
+.summary-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 0;
+}
+
+.summary-item ion-icon {
+  font-size: 32px;
+}
+
+.summary-item h3 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.summary-item p {
+  margin: 0;
+  font-size: 12px;
+  color: var(--ion-color-medium);
+}
+
+/* Tarjeta de gestor */
+.gestor-card {
+  margin: 16px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.gestor-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.gestor-header {
+  --padding-start: 0;
+  --inner-padding-end: 0;
+  margin-bottom: 16px;
+}
+
+.gestor-header ion-label h2 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.gestor-header ion-label p {
+  font-size: 14px;
+  color: var(--ion-color-medium);
+  margin: 2px 0;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.gestor-header ion-label p ion-icon {
+  font-size: 14px;
+}
+
+/* Badges */
+.gestor-badges {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.gestor-badges ion-chip {
+  margin: 0;
+  font-size: 12px;
+}
+
+.gestor-badges ion-chip ion-icon {
+  margin-right: 4px;
+  font-size: 14px;
+}
+
+/* Estadísticas */
+.gestor-stats {
+  margin: 16px -8px;
+}
+
+.stat-box {
+  background: var(--ion-color-light);
+  border-radius: 8px;
+  padding: 12px;
+  text-align: center;
+  margin: 4px;
+  min-height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.stat-box p {
+  margin: 0 0 4px 0;
+  font-size: 11px;
+  color: var(--ion-color-medium);
+  font-weight: 500;
+}
+
+.stat-box h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--ion-color-dark);
+}
+
+.stat-box .text-warning {
+  color: var(--ion-color-warning);
+}
+
+/* Información adicional */
+.gestor-info {
+  padding-top: 16px;
+  border-top: 1px solid var(--ion-color-light);
+}
+
+.gestor-info p {
+  margin: 4px 0;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--ion-color-medium-shade);
+}
+
+.gestor-info ion-icon {
+  font-size: 16px;
+  color: var(--ion-color-medium);
+}
+
+/* Empty state */
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+  padding: 32px;
+  text-align: center;
+}
+
+.empty-state ion-icon {
+  font-size: 80px;
+  color: var(--ion-color-medium);
+  margin-bottom: 24px;
+}
+
+.empty-state h2 {
+  margin: 0 0 8px 0;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.empty-state p {
+  margin: 0;
+  color: var(--ion-color-medium);
+}
+
+/* Modal styles */
+.send-button {
+  margin-top: 24px;
+  --border-radius: 8px;
+}
+
+ion-modal ion-item {
+  --padding-start: 0;
+  margin: 12px 0;
+}
+
+ion-modal ion-label {
+  margin-bottom: 8px !important;
+}
+
+ion-modal ion-item ion-label[position="floating"] {
+  padding-bottom: 8px;
+}
+
+ion-modal ion-item ion-label[position="stacked"] {
+  padding-bottom: 8px;
+  margin-bottom: 4px;
+}
+
+ion-modal ion-select {
+  padding-top: 8px;
+}
+
+ion-modal ion-input,
+ion-modal ion-textarea {
+  --padding-top: 8px;
+}
+
+/* Avatar */
+ion-avatar {
+  width: 56px;
+  height: 56px;
+}
+
+/* Segment styles */
+ion-segment {
+  padding: 0 16px;
+}
+
+ion-segment-button {
+  font-size: 12px;
+  text-transform: none;
+}
+
+/* Mejoras para modo claro */
+.stat-box {
+  background: #f4f5f8;
+  border: 1px solid #e0e0e0;
+}
+
+.gestor-card {
+  background: var(--ion-color-light);
+}
+
+.gestor-card ion-card-content {
+  background: white;
+}
+
+/* Responsive design */
+@media (min-width: 768px) {
+  .summary-card {
+    margin: 24px;
+  }
+  
+  .gestor-card {
+    margin: 24px;
+  }
+  
+  .gestor-header ion-label h2 {
+    font-size: 20px;
+  }
+  
+  .stat-box h3 {
+    font-size: 18px;
+  }
+  
+  ion-avatar {
+    width: 64px;
+    height: 64px;
+  }
+}
+
+@media (min-width: 992px) {
+  .gestor-stats ion-col {
+    size: 3;
+  }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .summary-card,
+  .gestor-card {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .gestor-card:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+  }
+  
+  .stat-box {
+    background: #1e1e1e;
+    border: 1px solid #333;
+  }
+  
+  .stat-box h3 {
+    color: #ffffff;
+  }
+  
+  .stat-box p {
+    color: #999;
+  }
+  
+  .gestor-info {
+    border-top-color: #333;
+  }
+  
+  .gestor-info p {
+    color: #999;
+  }
+  
+  .gestor-card {
+    background: #2a2a2a;
+  }
+  
+  .gestor-card ion-card-content {
+    background: #1a1a1a;
+  }
+}
+
+/* Loading state */
+ion-progress-bar {
+  --progress-background: var(--ion-color-primary);
+}

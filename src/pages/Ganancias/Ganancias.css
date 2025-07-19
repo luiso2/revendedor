@@ -1,0 +1,191 @@
+/* Estilos para la página de Ganancias */
+
+.period-header {
+  padding: 16px;
+  background: var(--ion-color-light);
+  text-align: center;
+}
+
+.period-header h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.period-header p {
+  margin: 4px 0 0 0;
+  color: var(--ion-color-medium);
+}
+
+/* Cards de resumen */
+.summary-card {
+  margin: 8px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.summary-card ion-card-content {
+  padding: 16px;
+  text-align: center;
+}
+
+.summary-icon {
+  margin-bottom: 8px;
+}
+
+.summary-icon ion-icon {
+  font-size: 32px;
+}
+
+.summary-card ion-text p {
+  margin: 0;
+  font-size: 0.875rem;
+  color: var(--ion-color-medium);
+}
+
+.summary-card ion-text h3 {
+  margin: 4px 0 0 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+/* Indicador de tendencia */
+.trend-indicator {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  background: var(--ion-color-light);
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.trend-icon {
+  font-size: 48px;
+}
+
+.trend-indicator ion-text h2 {
+  margin: 0;
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+.trend-indicator ion-text h2.positive {
+  color: var(--ion-color-success);
+}
+
+.trend-indicator ion-text h2.negative {
+  color: var(--ion-color-danger);
+}
+
+.trend-indicator ion-text p {
+  margin: 4px 0 0 0;
+  color: var(--ion-color-medium);
+  font-size: 0.875rem;
+}
+
+/* Grid de estadísticas */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.stat-item {
+  text-align: center;
+  padding: 12px;
+  background: var(--ion-color-light);
+  border-radius: 8px;
+}
+
+.stat-item ion-text p {
+  margin: 0;
+  font-size: 0.75rem;
+}
+
+.stat-item ion-text h4 {
+  margin: 4px 0 0 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+/* Lista de transacciones */
+.transaction-amount {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+}
+
+.transaction-amount h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.transaction-amount ion-chip {
+  font-size: 0.75rem;
+  height: 24px;
+}
+
+/* Estado vacío */
+.empty-state {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.empty-state ion-icon {
+  font-size: 48px;
+  margin-bottom: 8px;
+}
+
+/* Sección de consejos */
+.tips-section {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.tips-section ion-icon {
+  font-size: 24px;
+  margin-top: 4px;
+}
+
+.tips-section ion-text h3 {
+  margin: 0 0 8px 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.tips-section ion-text p {
+  margin: 0;
+  font-size: 0.875rem;
+  line-height: 1.4;
+}
+
+/* Modal de fecha */
+ion-datetime {
+  margin: 16px;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .summary-card {
+    max-width: 300px;
+  }
+  
+  ion-grid {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+}
+
+/* Segmentos */
+ion-segment {
+  margin: 8px 16px;
+}
+
+ion-segment-button {
+  font-size: 0.875rem;
+}

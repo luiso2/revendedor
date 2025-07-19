@@ -1,0 +1,110 @@
+.login-content {
+  --background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.logo-container {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.app-logo {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  display: block;
+}
+
+.app-title {
+  color: white;
+  font-size: 36px;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.app-subtitle {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 16px;
+  margin: 0;
+}
+
+.login-card {
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.login-card ion-card-header {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.login-card ion-card-title {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.login-card ion-segment {
+  margin-bottom: 20px;
+}
+
+.login-card ion-segment-button {
+  --indicator-height: 3px;
+  min-height: 60px;
+}
+
+.login-card ion-segment-button ion-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-card ion-segment-button ion-icon {
+  font-size: 24px;
+  margin-bottom: 4px;
+}
+
+.login-card ion-segment-button p {
+  margin: 0;
+  font-size: 12px;
+}
+
+.login-card ion-item {
+  --padding-start: 0;
+  margin-bottom: 10px;
+}
+
+.login-card ion-item ion-icon {
+  color: var(--ion-color-medium);
+  margin-right: 10px;
+}
+
+.toggle-auth {
+  margin-top: 20px;
+}
+
+.toggle-auth a {
+  color: var(--ion-color-primary);
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.toggle-auth a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 576px) {
+  .app-title {
+    font-size: 28px;
+  }
+  
+  .login-card {
+    margin: 0 10px;
+  }
+}

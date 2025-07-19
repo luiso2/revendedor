@@ -1,0 +1,315 @@
+/* Estilos para la página de Herramientas de Venta */
+
+.section-header {
+  padding: 24px 16px 16px;
+  text-align: center;
+}
+
+.section-header h2 {
+  margin: 0 0 8px 0;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.section-header p {
+  margin: 0;
+  color: var(--ion-color-medium);
+  font-size: 14px;
+}
+
+/* Plantillas de mensajes */
+.plantilla-card {
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.plantilla-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.plantilla-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.plantilla-icon {
+  font-size: 32px;
+  color: var(--ion-color-primary);
+}
+
+.plantilla-card ion-card-title {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.mensaje-preview {
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--ion-color-medium-shade);
+  white-space: pre-line;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+/* Material promocional */
+.material-card {
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.material-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.material-thumbnail {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1;
+  overflow: hidden;
+}
+
+.material-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.material-type {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  font-size: 11px;
+  text-transform: uppercase;
+}
+
+.material-card ion-card-content {
+  padding: 12px;
+}
+
+.material-card h3 {
+  margin: 0 0 4px 0;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.material-card p {
+  margin: 0;
+  font-size: 12px;
+  color: var(--ion-color-medium);
+}
+
+/* Calculadora */
+.calculadora-card {
+  margin: 16px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.calculate-button {
+  margin: 16px 0;
+  --border-radius: 8px;
+}
+
+.separator {
+  text-align: center;
+  margin: 24px 0;
+  position: relative;
+  color: var(--ion-color-medium);
+  font-weight: 500;
+}
+
+.separator::before,
+.separator::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 45%;
+  height: 1px;
+  background: var(--ion-color-light);
+}
+
+.separator::before {
+  left: 0;
+}
+
+.separator::after {
+  right: 0;
+}
+
+.resultado-calculo {
+  margin-top: 24px;
+  padding: 16px;
+  background: var(--ion-color-light);
+  border-radius: 8px;
+}
+
+.resultado-calculo h3 {
+  margin: 0 0 16px 0;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.resultado-item {
+  text-align: center;
+}
+
+.resultado-item p {
+  margin: 0 0 4px 0;
+  font-size: 12px;
+  color: var(--ion-color-medium);
+}
+
+.resultado-item h4 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.text-success {
+  color: var(--ion-color-success);
+}
+
+.text-primary {
+  color: var(--ion-color-primary);
+}
+
+.porcentaje-chip {
+  display: block;
+  margin: 16px auto 0;
+  width: fit-content;
+}
+
+/* QR Generator */
+.qr-card {
+  margin: 16px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.qr-options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.qr-custom {
+  padding-top: 24px;
+  border-top: 1px solid var(--ion-color-light);
+}
+
+.qr-custom h3 {
+  margin: 0 0 16px 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* Modal styles */
+.mensaje-preview-box {
+  margin: 24px 0;
+  padding: 16px;
+  background: var(--ion-color-light);
+  border-radius: 8px;
+  border-left: 4px solid var(--ion-color-primary);
+}
+
+.mensaje-preview-box h3 {
+  margin: 0 0 8px 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--ion-color-medium-shade);
+}
+
+.mensaje-preview-box p {
+  margin: 0;
+  white-space: pre-line;
+  line-height: 1.5;
+}
+
+.share-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.material-preview {
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.material-preview img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive design */
+@media (min-width: 768px) {
+  .section-header {
+    padding: 32px 24px 24px;
+  }
+
+  .section-header h2 {
+    font-size: 28px;
+  }
+
+  .calculadora-card,
+  .qr-card {
+    margin: 24px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .share-buttons {
+    flex-direction: row;
+  }
+
+  .share-buttons ion-button {
+    flex: 1;
+  }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .plantilla-card,
+  .material-card,
+  .calculadora-card,
+  .qr-card {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  }
+
+  .plantilla-card:hover,
+  .material-card:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+  }
+
+  .resultado-calculo,
+  .mensaje-preview-box {
+    background: rgba(255, 255, 255, 0.05);
+  }
+
+  .separator::before,
+  .separator::after {
+    background: var(--ion-color-medium-shade);
+  }
+}
+
+/* Loading state */
+ion-progress-bar {
+  --progress-background: var(--ion-color-primary);
+}

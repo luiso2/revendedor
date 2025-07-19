@@ -1,0 +1,286 @@
+/* Estilos para la página de Inventario */
+
+.product-item-card {
+  margin: 8px 16px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.product-item-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.product-avatar {
+  width: 80px;
+  height: 80px;
+  margin-right: 16px;
+}
+
+.product-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.product-info {
+  flex: 1;
+}
+
+.product-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.product-header h2 {
+  margin: 0 0 4px 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--ion-text-color);
+}
+
+.product-category {
+  margin: 0 0 8px 0;
+  font-size: 14px;
+  color: var(--ion-color-medium);
+}
+
+.product-description {
+  margin: 0 0 12px 0;
+  font-size: 14px;
+  color: var(--ion-color-medium-shade);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.product-chips {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.product-chips ion-chip {
+  margin: 0;
+  font-size: 12px;
+}
+
+.product-chips ion-chip ion-icon {
+  margin-right: 4px;
+}
+
+.product-metrics {
+  display: flex;
+  gap: 24px;
+  padding-top: 12px;
+  border-top: 1px solid var(--ion-color-light);
+}
+
+.metric {
+  text-align: center;
+  flex: 1;
+}
+
+.metric p {
+  margin: 0 0 4px 0;
+  font-size: 12px;
+}
+
+.metric h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* Empty state */
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+  padding: 32px;
+  text-align: center;
+}
+
+.empty-state ion-icon {
+  font-size: 80px;
+  color: var(--ion-color-medium);
+  margin-bottom: 24px;
+}
+
+.empty-state h2 {
+  margin: 0 0 8px 0;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.empty-state p {
+  margin: 0 0 24px 0;
+  color: var(--ion-color-medium);
+}
+
+/* Modal styles */
+.image-section {
+  margin: 24px 0;
+}
+
+.image-section h3 {
+  margin: 0 0 16px 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 12px;
+}
+
+.image-item {
+  position: relative;
+  aspect-ratio: 1;
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--ion-color-light);
+}
+
+.image-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.remove-image-btn {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  width: 32px;
+  height: 32px;
+  --background: rgba(255, 255, 255, 0.9);
+  --border-radius: 50%;
+}
+
+.add-image-btn {
+  aspect-ratio: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  --border-radius: 8px;
+  --border-style: dashed;
+}
+
+.add-image-btn ion-icon {
+  font-size: 24px;
+  margin-bottom: 4px;
+}
+
+.add-image-btn p {
+  margin: 0;
+  font-size: 12px;
+}
+
+.save-button {
+  margin-top: 24px;
+  --border-radius: 8px;
+}
+
+/* Modal form styles */
+ion-modal ion-item {
+  --padding-start: 0;
+  margin: 12px 0;
+}
+
+ion-modal ion-label {
+  margin-bottom: 8px !important;
+}
+
+ion-modal ion-item ion-label[position="floating"] {
+  padding-bottom: 8px;
+}
+
+ion-modal ion-item ion-label[position="stacked"] {
+  padding-bottom: 8px;
+  margin-bottom: 4px;
+}
+
+ion-modal ion-select {
+  padding-top: 8px;
+}
+
+ion-modal ion-input,
+ion-modal ion-textarea {
+  --padding-top: 8px;
+}
+
+/* FAB positioning */
+ion-fab {
+  margin: 16px;
+}
+
+/* Responsive design */
+@media (min-width: 768px) {
+  .product-item-card {
+    margin: 12px 24px;
+  }
+
+  .product-avatar {
+    width: 100px;
+    height: 100px;
+  }
+
+  .product-header h2 {
+    font-size: 20px;
+  }
+
+  .product-metrics {
+    gap: 32px;
+  }
+
+  .image-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .product-item-card {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  }
+
+  .product-item-card:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+  }
+
+  .product-metrics {
+    border-top-color: var(--ion-color-medium-shade);
+  }
+
+  .image-item {
+    background: var(--ion-color-medium-shade);
+  }
+
+  .remove-image-btn {
+    --background: rgba(0, 0, 0, 0.8);
+  }
+}
+
+/* Loading state */
+ion-progress-bar {
+  --progress-background: var(--ion-color-primary);
+}
+
+/* Segment styles */
+ion-segment {
+  padding: 0 16px;
+}
+
+ion-segment-button {
+  text-transform: capitalize;
+}
