@@ -184,8 +184,8 @@ const Ganancias: React.FC = () => {
         descripcion: `Comisión por ${pedido.productoNombre}`,
         fecha: pedido.fechaActualizacion,
         pedidoId: pedido.id,
-        estado: pedido.estado === 'cerrado' ? 'cobrado' : 
-                pedido.estado === 'entregado_pago_recibido' ? 'pendiente' : 'pendiente'
+        estado: (pedido.estado === 'cerrado' ? 'cobrado' : 
+                pedido.estado === 'entregado_pago_recibido' ? 'pendiente' : 'pendiente') as 'pendiente' | 'cobrado' | 'cancelado'
       }))
       .sort((a, b) => new Date(b.fecha).getTime() - new Date(a.fecha).getTime());
   };

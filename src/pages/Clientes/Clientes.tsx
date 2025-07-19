@@ -596,7 +596,7 @@ const Clientes: React.FC = () => {
                 <IonLabel position="stacked">Fecha y hora *</IonLabel>
                 <IonDatetime
                   value={reminderDate}
-                  onIonChange={e => setReminderDate(e.detail.value!)}
+                  onIonChange={e => setReminderDate(e.detail.value as string)}
                   min={new Date().toISOString()}
                   preferWheel={true}
                 />

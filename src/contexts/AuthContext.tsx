@@ -8,6 +8,7 @@ interface AuthContextType {
   login: (email: string, password: string, role: UserRole) => Promise<void>;
   logout: () => Promise<void>;
   refreshUser: () => void;
+  updateProfile: (userData: Partial<GestorVentas | PropietarioProducto>) => Promise<void>;
 }
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
@@ -50,8 +51,16 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     setUser(currentUser);
   };
 
+  const updateProfile = async (userData: Partial<GestorVentas | PropietarioProducto>) => {
+    if (user) {
+      const updatedUser = { ...user, ...userData } as GestorVentas | PropietarioProducto;
+      setUser(updatedUser);
+      // Aquí se podría guardar en localStorage o hacer una llamada a la API
+    }
+  };
+
   return (
-    <AuthContext.Provider value={{ user, loading, login, logout, refreshUser }}>
+    <AuthContext.Provider value={{ user, loading, login, logout, refreshUser, updateProfile }}>
       {children}
     </AuthContext.Provider>
   );

@@ -10,6 +10,11 @@ export default defineConfig({
     react(),
     legacy()
   ],
+  base: '/revendedor/',
+  build: {
+    outDir: 'dist',
+    sourcemap: true
+  },
   test: {
     globals: true,
     environment: 'jsdom',
